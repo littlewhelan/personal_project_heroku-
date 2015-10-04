@@ -22,7 +22,7 @@ block content
         button(id='doubleBtn' ng-click='doubleBtn()' ng-show ='showDoubleBtn').col-md-1 2X
         button(id='stayBtn' ng-click='stayBtn()' ng-show ='hideStayBtn').col-md-1 Stay
         button(id='hitBtn' ng-click='hitBtn()' ng-show ='hideHitBtn').col-md-1 Hit
-        button(id='dealBtn' ng-click='dealBtn()' ng-show ='true').col-md-1 Deal
+        button(id='dealBtn' ng-click='dealBtn()' ng-hide ='hideDealBtn').col-md-1 Deal
     div(ng-show ='true').row.cards
       div.col-md-offset-5.col-md-6.bank
         |Bank: {{playersBank}}

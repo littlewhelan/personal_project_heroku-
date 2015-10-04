@@ -7,13 +7,11 @@ var naturalBlackjack = function () {
         vars.playerCanHit = false;
         vars.naturalBlackjackDealer =true;
     }
-
     if(vars.playerScore == 21 && vars.playerArray.length == 2) {
         vars.naturalBlackjackPlayer = true;
         vars.playerCanHit = false;
         vars.allHandsDone = true;
     }
-
     if(vars.naturalBlackjackPlayer == true && vars.naturalBlackjackDealer == true && vars.dealersFirstCardIsAce == true) {
         vars.playersBank += vars.playerBet;
         vars.playerDone = true;

@@ -26,8 +26,6 @@ var cards = {
            numOfDecks += 1;
        }
            return cards;
-
-
     },
     //This is the Fisher Yates Function
     shuffleDeck: function (cards) {

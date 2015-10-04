@@ -18,12 +18,15 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
             $scope.hideHitBtn = response.data.playerCanHit;
             $scope.hideStayBtn = response.data.playerCanHit;
             $scope.allHandsDone = response.data.allHandsDone;
+            $scope.hideDealBtn = response.data.playerCanHit;
+
 
         });
     };
 
     //this will make a call to deal the hand for both the house and the player
     $scope.dealBtn = function () {
+        this.getInfo();
         $http({
             method: 'GET',
             url: '/deal'

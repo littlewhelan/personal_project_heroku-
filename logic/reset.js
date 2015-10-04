@@ -26,7 +26,7 @@ var reset = function() {
 
     vars.allHandsDone = false;
     vars.playerBet = 2;
-
+    vars.hideDealBtn = false;
 
 };
 
