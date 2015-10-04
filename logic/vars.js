@@ -18,7 +18,7 @@ var score = {
     playerArray: [],
     discardArray: [],
     //bet that the player makes and the total amount the player has to bet with
-    playersBank: 1000,
+    playersBank: '',
     playerBet: ''|| 2, //or the input Value some set value from the index page
     //checking if it is possible to double
     playerCanDouble:false,

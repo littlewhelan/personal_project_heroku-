@@ -3,7 +3,7 @@ var vars = require('./vars');
 
 var deal = function() {
     //making sure players bank is not zero
-    if(vars.playersBank == 0) {
+    if(vars.playersBank <= 4) {
         vars.playersBank = 1000
     };
     // makes sure there are cards in the deck or shuffles up a new deck
