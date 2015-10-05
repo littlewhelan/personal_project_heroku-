@@ -10,17 +10,17 @@ var separate = {
             calc.playerScoreF();
             vars.playerCanSplit = false;
         }
+        // else if (vars.playerCanSplit == true && vars.split2Array.length == 0) {
+        //    vars.split2Array.push(vars.playerArray.shift());
+        //    calc.playerScoreF();
+        //    vars.playerCanSplit = false;
+        //} else if (vars.playerCanSplit == true && vars.split3Array.length == 0) {
+        //    vars.split3Array.push(vars.playerArray.shift());
+        //    calc.playerScoreF();
+        //    vars.playerCanSplit = false;
+        //}
+        //}
     }
-    // else if (vars.playerCanSplit == true && vars.split2Array.length == 0) {
-    //        vars.split2Array.push(vars.playerArray.shift());
-    //        calc.playerScoreF();
-    //        vars.playerCanSplit = false;
-    //    } else if (vars.playerCanSplit == true && vars.split3Array.length == 0) {
-    //        vars.split3Array.push(vars.playerArray.shift());
-    //        calc.playerScoreF();
-    //        vars.playerCanSplit = false;
-    //    }
-    //}
 };
 
 module.exports = separate;

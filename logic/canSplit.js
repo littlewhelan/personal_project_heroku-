@@ -5,7 +5,7 @@ var splitPossible = {
     player: function (array) {
         if (array[0].value == array[1].value && vars.playerArray.length == 2 ) {
             vars.playerCanSplit = true;
-        } else {vars.playerCanSplit = false }
+        }
     }
 
     //split1:function (array) {

@@ -10,6 +10,7 @@ var deal = function() {
     if(vars.startDeckArray.length <= 12) {
         vars.startDeckArray = cards.theDeck();
         vars.discardArray =[];
+        vars.hiLowCount = 0;
     };
     //deal two cards to the player and the dealer 
     vars.playerArray.push(cards.drawCard());

@@ -18,6 +18,8 @@ var score = {
     playerArray: [],
     discardArray: [],
     split1Array:[],
+    split2Array:[],
+    split3Array:[],
     //bet that the player makes and the total amount the player has to bet with
     playersBank: '',
     playerBet: ''|| 2, //or the input Value some set value from the index page
