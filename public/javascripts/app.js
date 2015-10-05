@@ -66,7 +66,6 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
         this.getInfo()
     };
 
-
     $scope.splitBtn = function () {
         this.getInfo();
         $http({

@@ -13,7 +13,14 @@ var emptyHands =  {
     playerEmpty: function () {
         vars.playerArray.forEach(this.moveToDiscard);
         vars.playerArray = [];
+    },
+
+    split1Empty: function () {
+        vars.split1Array.forEach(this.moveToDiscard);
+        vars.split1Array = [];
     }
+
+
 
 };
 

@@ -5,6 +5,7 @@ var reset = function() {
     //move all cards to discard pile
     emptyHands.dealerEmpty();
     emptyHands.playerEmpty();
+    emptyHands.split1Array();
 
     // reset inital values for next round
     vars.dealerBust = false;
@@ -26,7 +27,7 @@ var reset = function() {
 
     vars.allHandsDone = false;
     vars.playerBet = 2;
-    vars.hideDealBtn = false;
+
 
 };
 

@@ -27,10 +27,8 @@ var score = {
     playerCanHit:true,
     //checking if player can split hand
     playerCanSplit:false,
-    allHandsDone:false,
-    hideDealBtn:false
-
-
+    //checking if all hands are done
+    allHandsDone:false
 
 
 };
