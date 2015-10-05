@@ -15,7 +15,7 @@ var hitOriginalHand = function() {
     //Check to see if the player bust if true subtract the bet
     bust.player();
     canDouble.player();
-    //canSplit.player(vars.playerArray);
+    canSplit.player(vars.playerArray);
 
 
 

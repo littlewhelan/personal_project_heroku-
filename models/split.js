@@ -1,11 +1,11 @@
 var sep = require('../logic/splitArrays');
 
 
-var splitHand = {
+var splitHand =function() {
 
-    player: function() {
+
         sep.player();
-    }
+
 
 
 };
