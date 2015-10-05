@@ -9,18 +9,15 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
         }).then(function (response) {
             $scope.playerHand = response.data.playerArray;
             $scope.dealerHand = response.data.dealerArray;
-            $scope.showSplitBtn = response.data.playerCanSplit;
-            $scope.showDoubleBtn = response.data.playerCanDouble;
             $scope.dealerScore = response.data.dealerScore;
             $scope.playerScore = response.data.playerScore;
             $scope.playersBank = response.data.playersBank;
             $scope.playerBet = response.data.playerBet;
             $scope.hideHitBtn = response.data.playerCanHit;
             $scope.hideStayBtn = response.data.playerCanHit;
-            $scope.allHandsDone = response.data.allHandsDone;
             $scope.hideDealBtn = response.data.playerCanHit;
-
-
+            $scope.showDoubleBtn = response.data.playerCanDouble;
+            $scope.allHandsDone = response.data.allHandsDone;
         });
     };
 
@@ -35,7 +32,7 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
         this.getInfo();
     };
 
-    //
+    //will cycle through the action of taking another card
     $scope.hitBtn = function () {
         $http({
             method: 'GET',

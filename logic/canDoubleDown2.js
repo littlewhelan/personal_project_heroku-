@@ -11,7 +11,8 @@ var doubleDown = {
         } else if (sum == 11 && vars.playerArray.length == 2 && vars.naturalBlackjackDealer == false) {
             vars.playerCanDouble = true;
         }
-    },
+        else vars.playerCanDouble = false;
+    }
 };
 
 

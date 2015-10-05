@@ -20,10 +20,7 @@ var dealMainHand = function() {
 
     if(vars.naturalBlackjackPlayer == true && vars.naturalBlackjackDealer == false) {
         dFin()
-    };
-
-
-
+    }
     //checks if the player can double
     canDouble.player();
 };

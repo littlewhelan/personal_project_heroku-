@@ -18,8 +18,6 @@ var double = function() {
     dFin();
     //it will also compare the score if neither the dealer or the player bust
     comp.player();
-
-
     vars.playerCanDouble = false;
     vars.playerCanHit = false;
     vars.allHandsDone = true;
