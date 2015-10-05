@@ -4,6 +4,7 @@ var calcScore = require('../logic/calcScores');
 var bust = require('../logic/handBust');
 var dFin = require('../logic/dealerHitTo17');
 var comp = require('../logic/compareScores');
+var hiLow = require('../logic/hiLowCount');
 
 var double = function() {
     // double the current bet that the player made
@@ -18,6 +19,7 @@ var double = function() {
     dFin();
     //it will also compare the score if neither the dealer or the player bust
     comp.player();
+    hiLow();
     vars.playerCanDouble = false;
     vars.playerCanHit = false;
     vars.allHandsDone = true;

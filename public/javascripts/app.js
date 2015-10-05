@@ -13,6 +13,7 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
             $scope.playerScore = response.data.playerScore;
             $scope.playersBank = response.data.playersBank;
             $scope.playerBet = response.data.playerBet;
+            $scope.hiLowCount = response.data.hiLowCount;
             $scope.hideHitBtn = response.data.playerCanHit;
             $scope.hideStayBtn = response.data.playerCanHit;
             $scope.hideDealBtn = response.data.playerCanHit;

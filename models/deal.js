@@ -6,6 +6,7 @@ var checkBLJ = require('../logic/checkNatBlackjack');
 var canDouble = require('../logic/canDoubleDown2');
 var dFin = require('../logic/dealerHitTo17');
 var canSplit = require('../logic/canSplit');
+var hiLow = require('../logic/hiLowCount');
 
 var dealMainHand = function() {
     // resets hands and to have no cards and natBlJ values to false
@@ -26,6 +27,7 @@ var dealMainHand = function() {
     canDouble.player();
     //check if player can split
     canSplit.player(vars.playerArray);
+    hiLow();
 };
 
 module.exports = dealMainHand;

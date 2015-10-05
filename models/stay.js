@@ -3,6 +3,7 @@ var vars = require('../logic/vars');
 var bust = require('../logic/handBust');
 var dFin = require('../logic/dealerHitTo17');
 var comp = require('../logic/compareScores');
+var hiLow = require('../logic/hiLowCount');
 
 var stand = function () {
     //check the score of the dealer will account for any aces as well
@@ -16,6 +17,7 @@ var stand = function () {
     bust.dealer();
     //if neither the player or the dealer bust compares the scores and pays out
     comp.player();
+    hiLow();
 };
 
 module.exports = stand;

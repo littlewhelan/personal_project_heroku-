@@ -4,6 +4,7 @@ var calc = require('../logic/calcScores');
 var bust = require('../logic/handBust');
 var canDouble = require('../logic/canDoubleDown2');
 var canSplit = require('../logic/canSplit');
+var hiLow = require('../logic/hiLowCount');
 
 
 var hitOriginalHand = function() {
@@ -16,6 +17,7 @@ var hitOriginalHand = function() {
     bust.player();
     canDouble.player();
     canSplit.player(vars.playerArray);
+    hiLow();
 
 
 

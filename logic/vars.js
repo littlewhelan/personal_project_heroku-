@@ -28,7 +28,8 @@ var score = {
     //checking if player can split hand
     playerCanSplit:false,
     //checking if all hands are done
-    allHandsDone:false
+    allHandsDone:false,
+    hiLowCount:0
 
 
 };
