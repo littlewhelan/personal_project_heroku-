@@ -1,14 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var hit = require('../models/hit');
+var split = require('../models/split');
 
-
-
-
-//set the route for the hit button
 router.get('/', function(req, res, next) {
 
-    hit();
+    split();
 
     res.render('index');
 });

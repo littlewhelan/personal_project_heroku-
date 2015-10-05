@@ -17,6 +17,7 @@ var score = {
     dealerArray: [],
     playerArray: [],
     discardArray: [],
+    split1Array:[],
     //bet that the player makes and the total amount the player has to bet with
     playersBank: '',
     playerBet: ''|| 2, //or the input Value some set value from the index page
@@ -24,8 +25,11 @@ var score = {
     playerCanDouble:false,
     //the player can still hit the hand
     playerCanHit:true,
+    //checking if player can split hand
+    playerCanSplit:false,
     allHandsDone:false,
     hideDealBtn:false
+
 
 
 

@@ -11,6 +11,7 @@ var double = require('./routes/double');
 var hit = require('./routes/hit');
 var stay = require('./routes/stay');
 var rules = require('./routes/rules');
+var split = require('./routes/split');
 var activeHandler = require('./routes/activeHands');
 
 var app = express();
@@ -33,6 +34,7 @@ app.use('/double', double);
 app.use('/hit', hit);
 app.use('/stay', stay);
 app.use('/rules', rules);
+app.use('/split',split);
 app.use('/activeHands',activeHandler);
 
 // catch 404 and forward to error handler

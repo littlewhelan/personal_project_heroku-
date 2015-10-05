@@ -16,6 +16,7 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
             $scope.hideHitBtn = response.data.playerCanHit;
             $scope.hideStayBtn = response.data.playerCanHit;
             $scope.hideDealBtn = response.data.playerCanHit;
+            $scope.showSplitBtn = response.data.playerCanSplit;
             $scope.showDoubleBtn = response.data.playerCanDouble;
             $scope.allHandsDone = response.data.allHandsDone;
         });
@@ -34,6 +35,7 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
 
     //will cycle through the action of taking another card
     $scope.hitBtn = function () {
+        this.getInfo();
         $http({
             method: 'GET',
             url: '/hit'
@@ -44,6 +46,7 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
 
     //this will make a call to complete the dealers hand
     $scope.stayBtn = function () {
+        this.getInfo();
         $http({
             method: 'GET',
             url: '/stay'
@@ -54,6 +57,7 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
 
     //this will make a call to get the double function
     $scope.doubleBtn = function () {
+        this.getInfo();
         $http({
             method: 'GET',
             url: '/double'
@@ -61,6 +65,18 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
         });
         this.getInfo()
     };
+
+
+    $scope.splitBtn = function () {
+        this.getInfo();
+        $http({
+            method: 'GET',
+            url: '/split'
+        }).then(function (response) {
+        });
+        this.getInfo()
+    };
+
 }
 
 ]);

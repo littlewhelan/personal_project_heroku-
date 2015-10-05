@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var vars = require('../logic/vars');
 var stay = require('../models/stay');
 
 
