@@ -1,6 +1,4 @@
 var score = {
-    //is the hand complete
-    playerDone:false,
     //what is the score of the hand
     dealerScore:'',
     playerScore:'',
@@ -26,9 +24,6 @@ var score = {
     playerCanHit:true,
     allHandsDone:false,
     hideDealBtn:false
-
-
-
 };
 
 

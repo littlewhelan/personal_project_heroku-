@@ -17,16 +17,14 @@ var vars = require('./vars');
          if (vars.dealerArray[0].name == 'Ace') {
              vars.dealersFirstCardIsAce = true;
          }
-         ;
 
          vars.dealerArray.forEach(function (element) {
              if (element.name == 'Ace') {
                  aceHigh = vars.dealerScore + 10;
              }
          });
-         if (aceHigh == 21) {
-             vars.dealerScore = 21;
-         } else if (aceHigh > vars.dealerScore && aceHigh < 21) {
+
+        if (aceHigh > vars.dealerScore && aceHigh < 22) {
              vars.dealerScore = aceHigh;
          }
          return vars.dealerScore;
@@ -40,9 +38,8 @@ var vars = require('./vars');
                  aceHigh = vars.playerScore + 10;
              }
          });
-         if (aceHigh == 21) {
-             vars.playerScore = 21;
-         } else if (aceHigh > vars.playerScore && aceHigh < 21) {
+
+        if (aceHigh > vars.playerScore && aceHigh < 22) {
              vars.playerScore = aceHigh;
          }
          return vars.playerScore;

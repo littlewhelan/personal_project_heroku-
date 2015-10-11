@@ -2,8 +2,6 @@ var vars = require('../logic/vars');
 var cards = require('../logic/cards');
 var calc = require('../logic/calcScores');
 var bust = require('../logic/handBust');
-var canDouble = require('../logic/canDoubleDown2');
-
 
 var hitOriginalHand = function() {
     //draw one more card for the players hand
@@ -14,9 +12,6 @@ var hitOriginalHand = function() {
     bust.player();
     //player can no longer double
     vars.playerCanDouble = false;
-
-
-
 };
 
 module.exports = hitOriginalHand;
