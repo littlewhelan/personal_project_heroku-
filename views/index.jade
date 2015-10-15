@@ -11,7 +11,7 @@ block content
         img(ng-src ="/images/{{cards.imgName}}")
       div(ng-show='allHandsDone').col-md-1.total.center
         |{{dealerScore}}
-    div(ng-hide ='false')#playerHand.row.cards
+    div(ng-show ='true')#playerHand.row.cards
       div.col-md-offset-4.col-md-1
       div(ng-repeat ="cards in playerHand" ).col-md-1.cards
         img(ng-src ="/images/{{cards.imgName}}")
