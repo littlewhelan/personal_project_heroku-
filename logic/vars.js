@@ -24,7 +24,6 @@ var score = {
     playerCanHit:true,
     allHandsDone:false,
     hideDealBtn:false,
-    startGameDealer:true,
 };
 
 
