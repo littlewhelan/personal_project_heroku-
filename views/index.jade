@@ -8,13 +8,13 @@ block content
       div(ng-hide='allHandsDone').col-md-1.cards
         img(src ="/images/sized.png")
       div(ng-repeat ="cards in dealerHand" ng-hide = '$index == 1 && !allHandsDone' ng-show= 'allHandsDone').col-md-1.cards
-        img(src ="/images/{{cards.imgName}}")
+        img(ng-src ="/images/{{cards.imgName}}")
       div(ng-show='allHandsDone').col-md-1.total.center
         |{{dealerScore}}
-    div(ng-hide ='startGamePlayer')#playerHand.row.cards
+    div(ng-hide ='false')#playerHand.row.cards
       div.col-md-offset-4.col-md-1
       div(ng-repeat ="cards in playerHand" ).col-md-1.cards
-        img(src ="/images/{{cards.imgName}}")
+        img(ng-src ="/images/{{cards.imgName}}")
       div.col-md-1.total.center
         |{{playerScore}}
     div.row.spacer.cards
