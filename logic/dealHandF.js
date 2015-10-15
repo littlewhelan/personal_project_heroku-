@@ -11,7 +11,8 @@ var deal = function() {
         vars.startDeckArray = cards.theDeck();
         vars.discardArray =[];
     };
-    //deal two cards to the player and the dealer 
+    //deal two cards to the player and the dealer
+    vars.startGamePlayer = false;
     vars.playerArray.push(cards.drawCard());
     vars.dealerArray.push(cards.drawCard());
     vars.playerArray.push(cards.drawCard());

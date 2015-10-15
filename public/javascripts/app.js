@@ -18,6 +18,7 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
             $scope.hideDealBtn = response.data.playerCanHit;
             $scope.showDoubleBtn = response.data.playerCanDouble;
             $scope.allHandsDone = response.data.allHandsDone;
+            $scope.startGamePlayer = response.data.startGamePlayer;
         });
     };
 

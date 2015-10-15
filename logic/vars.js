@@ -23,7 +23,9 @@ var score = {
     //the player can still hit the hand
     playerCanHit:true,
     allHandsDone:false,
-    hideDealBtn:false
+    hideDealBtn:false,
+    startGameDealer:true,
+    startGamePlayer:true
 };
 
 
