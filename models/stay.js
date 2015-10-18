@@ -6,6 +6,7 @@ var comp = require('../logic/compareScores');
 var hiLow = require('../logic/hiLowCount');
 
 var stand = function () {
+    vars.playerCanSplit = false;
     //check the score of the dealer will account for any aces as well
     calcScore.dealerScoreF();
     //dealer hits until he has 17
@@ -17,7 +18,7 @@ var stand = function () {
     bust.dealer();
     //if neither the player or the dealer bust compares the scores and pays out
     comp.player();
-    hiLow();
+    //hiLow();
 };
 
 module.exports = stand;

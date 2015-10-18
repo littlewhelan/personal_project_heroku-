@@ -17,8 +17,6 @@ var reset = function() {
 
     vars.playerBust = false;
 
-    vars.playeDone = false;
-
     vars.playerCanDouble = false;
 
     vars.playerCanSplit = false;

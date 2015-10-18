@@ -9,7 +9,9 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
         }).then(function (response) {
             $scope.playerHand = response.data.playerArray;
             $scope.dealerHand = response.data.dealerArray;
+            $scope.split1Hand = response.data.split1Array;
             $scope.dealerScore = response.data.dealerScore;
+            $scope.split1Score = response.data.split1Score;
             $scope.playerScore = response.data.playerScore;
             $scope.playersBank = response.data.playersBank;
             $scope.playerBet = response.data.playerBet;
@@ -20,6 +22,8 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
             $scope.showSplitBtn = response.data.playerCanSplit;
             $scope.showDoubleBtn = response.data.playerCanDouble;
             $scope.allHandsDone = response.data.allHandsDone;
+            $scope.playerHandActive = response.data.playerHandActive;
+            $scope.split1Active = response.data.split1Active;
         });
     };
 

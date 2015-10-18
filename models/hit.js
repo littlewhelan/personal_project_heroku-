@@ -9,15 +9,30 @@ var hiLow = require('../logic/hiLowCount');
 
 var hitOriginalHand = function() {
 
-    //draw one more card
-    vars.playerArray.push(cards.drawCard());
-    //check the new score
-    calc.playerScoreF();
-    //Check to see if the player bust if true subtract the bet
-    bust.player();
-    canDouble.player();
-    canSplit.player(vars.playerArray);
-    hiLow();
+    if (vars.playerHandActive == true) {
+            vars.playerCanSplit = false;
+            //draw one more card
+            vars.playerArray.push(cards.drawCard());
+            //check the new score
+            calc.playerScoreF();
+            //Check to see if the player bust if true subtract the bet
+            bust.player();
+            canDouble.player();
+            canSplit.player(vars.playerArray);
+            //hiLow();
+    } else if (vars.split1ArrayActive == true) {
+        //draw one more card
+        vars.split1Array.push(cards.drawCard());
+        //check the new score
+        calc.split1ScoreF();
+        //Check to see if the player bust if true subtract the bet
+        bust.array1();
+        canDouble.array1();
+        canSplit.player(vars.playerArray);
+        //hiLow();
+
+        }
+
 
 
 

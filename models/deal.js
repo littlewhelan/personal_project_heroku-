@@ -1,5 +1,5 @@
 var deal = require('../logic/dealHandF');
-var reset =require('../logic/reset');
+var reset =require('../logic/reset');``
 var vars = require('../logic/vars');
 var calcScore = require('../logic/calcScores');
 var checkBLJ = require('../logic/checkNatBlackjack');
@@ -27,7 +27,7 @@ var dealMainHand = function() {
     canDouble.player();
     //check if player can split
     canSplit.player(vars.playerArray);
-    hiLow();
+    //hiLow();
 };
 
 module.exports = dealMainHand;

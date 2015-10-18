@@ -12,7 +12,23 @@ var doubleDown = {
             vars.playerCanDouble = true;
         }
         else vars.playerCanDouble = false;
-    }
+    },
+
+     splitArray1: function () {
+            var sum = vars.split1Score;
+            if (sum == 9 && vars.split1Array.length == 2 && vars.naturalBlackjackDealer == false) {
+                vars.playerCanDouble = true;
+            } else if (sum == 10 && vars.split1Array.length == 2 && vars.naturalBlackjackDealer == false) {
+                vars.playerCanDouble = true;
+            } else if (sum == 11 && vars.splitArray.length == 2 && vars.naturalBlackjackDealer == false) {
+                vars.playerDouble = true;
+            }
+            else vars.playerCanDouble = false;
+        }
+
+
+
+
 };
 
 

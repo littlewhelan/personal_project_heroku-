@@ -46,7 +46,22 @@ var vars = require('./vars');
              vars.playerScore = aceHigh;
          }
          return vars.playerScore;
-     }
+     },
+     split1ScoreF: function () {
+              vars.split1Score = this.createLoop(vars.split1Array);
+              var aceHigh = 0;
+              vars.split1Array.forEach(function (element) {
+                  if (element.name == 'Ace') {
+                      aceHigh = vars.split1Score + 10;
+                  }
+              });
+              if (aceHigh == 21) {
+                  vars.split1Score = 21;
+              } else if (aceHigh > vars.split1Score && aceHigh < 21) {
+                  vars.playerScore = aceHigh;
+              }
+              return vars.playerScore;
+          }
 
  };
 module.exports = scores;

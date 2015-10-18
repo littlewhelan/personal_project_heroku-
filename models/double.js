@@ -9,6 +9,7 @@ var hiLow = require('../logic/hiLowCount');
 var double = function() {
     // double the current bet that the player made
     vars.playerBet = (vars.playerBet*2);
+    vars.playerCanSplit = false;
     //add one card to the players hand
     vars.playerArray.push(cards.drawCard());
     // recheck the value of the hand will check for ace as well
@@ -19,7 +20,7 @@ var double = function() {
     dFin();
     //it will also compare the score if neither the dealer or the player bust
     comp.player();
-    hiLow();
+   // hiLow();
     vars.playerCanDouble = false;
     vars.playerCanHit = false;
     vars.allHandsDone = true;

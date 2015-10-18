@@ -28,9 +28,4 @@ var naturalBlackjack = function () {
 
 };
 
-
-
-
-
-
 module.exports = naturalBlackjack;

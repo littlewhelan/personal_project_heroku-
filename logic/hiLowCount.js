@@ -1,7 +1,7 @@
 var vars = require('./vars');
 
 var hiLow = function() {
-    vars.hiLowCount = 0;
+
 
     //need to add an if statement that checks if dealer hands is complete, if yes total all cards if no total all cards less dealer down
 if(vars.allHandsDone == true) {

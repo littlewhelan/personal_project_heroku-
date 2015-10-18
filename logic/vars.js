@@ -1,9 +1,11 @@
 var score = {
     //is the hand complete
-    playerDone:false,
+    playerHandActive:true,
+    split1ArrayActive:false,
     //what is the score of the hand
     dealerScore:'',
     playerScore:'',
+    split1Score:'',
     //did the hand bust
     dealerBust:false,
     playerBust:false,
@@ -31,7 +33,7 @@ var score = {
     playerCanSplit:false,
     //checking if all hands are done
     allHandsDone:false,
-    hiLowCount:0
+   //hiLowCount:0,
 
 
 };
