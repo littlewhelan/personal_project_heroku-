@@ -12,9 +12,10 @@ var handBust = {
                 vars.split1ArrayActive = true;
                 vars.allHandsDone = false;
                 vars.playerCanHit = true;
+                vars.playerCanStand = false;
                 vars.playerCanDouble = false;
                 //check if player can double on the split
-                vars.playerCanDouble = true;
+                double.splitArray1();
                 //check if player can split again --- do this after have one round of splits working
 
         } else if (vars.playerScore > 21) {
@@ -22,6 +23,7 @@ var handBust = {
                 vars.playersBank -= vars.playerBet;
                 vars.allHandsDone = true;
                 vars.split1CanHit = false;
+                vars.playerCanStand = false;
                 dFin();
                 }
     },
@@ -31,10 +33,12 @@ var handBust = {
             vars.allHandsDone = true;
             vars.split1Bust = true;
             vars.split1CanHit = false;
+            playerCanStand = false;
             vars.playersBank -= vars.playerBet;
             dFin();
         }
     },
+
     dealer:function() {
         if(vars.dealerScore > 21) {
            vars.allHandsDone = true;

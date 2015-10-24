@@ -31,6 +31,8 @@ var score = {
     playerCanHit:true,
     //checking if player can split hand
     playerCanSplit:false,
+    //player can stand
+    playerCanStand: true,
     //checking if all hands are done
     allHandsDone:false,
    //hiLowCount:0,

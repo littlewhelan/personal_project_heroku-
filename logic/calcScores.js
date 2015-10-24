@@ -58,9 +58,9 @@ var vars = require('./vars');
               if (aceHigh == 21) {
                   vars.split1Score = 21;
               } else if (aceHigh > vars.split1Score && aceHigh < 21) {
-                  vars.playerScore = aceHigh;
+                  vars.split1Score = aceHigh;
               }
-              return vars.playerScore;
+              return vars.split1Score;
           }
 
  };

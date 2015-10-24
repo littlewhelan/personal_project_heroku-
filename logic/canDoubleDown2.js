@@ -14,7 +14,7 @@ var doubleDown = {
         else vars.playerCanDouble = false;
     },
 
-     splitArray1: function () {
+     split1Array: function () {
             var sum = vars.split1Score;
             if (sum == 9 && vars.split1Array.length == 2 && vars.naturalBlackjackDealer == false) {
                 vars.playerCanDouble = true;

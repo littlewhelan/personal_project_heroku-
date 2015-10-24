@@ -7,9 +7,11 @@ var reset = function() {
     emptyHands.playerEmpty();
     emptyHands.split1Empty();
 
-    // reset inital values for next round
+
+    //reset initial values for next round
     vars.dealerBust = false;
     vars.playerBust = false;
+    vars.split1Bust = false;
 
     vars.dealersFirstCardIsAce = false;
     vars.naturalBlackjackDealer = false;
@@ -17,14 +19,18 @@ var reset = function() {
 
     vars.playerBust = false;
 
+    //reset values for button control
     vars.playerCanDouble = false;
-
     vars.playerCanSplit = false;
-
     vars.playerCanHit = true;
+    vars.playerCanStand = true;
 
     vars.allHandsDone = false;
     vars.playerBet = 2;
+
+    //reset active hand
+    vars.playerHandActive = true;
+    vars.split1Active = false;
 
 
 };

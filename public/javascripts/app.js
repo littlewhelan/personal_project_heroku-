@@ -17,13 +17,14 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
             $scope.playerBet = response.data.playerBet;
             $scope.hiLowCount = response.data.hiLowCount;
             $scope.hideHitBtn = response.data.playerCanHit;
-            $scope.hideStayBtn = response.data.playerCanHit;
+            $scope.showStayBtn = response.data.playerCanStand;
             $scope.hideDealBtn = response.data.playerCanHit;
             $scope.showSplitBtn = response.data.playerCanSplit;
             $scope.showDoubleBtn = response.data.playerCanDouble;
             $scope.allHandsDone = response.data.allHandsDone;
             $scope.playerHandActive = response.data.playerHandActive;
             $scope.split1Active = response.data.split1Active;
+
         });
     };
 
@@ -71,6 +72,7 @@ app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
         this.getInfo()
     };
 
+    // this is the route if the player chooses to split
     $scope.splitBtn = function () {
         this.getInfo();
         $http({
