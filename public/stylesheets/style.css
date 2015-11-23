@@ -46,3 +46,7 @@ h1{
 body {
     background-color: #194D1E;
 }
+
+#hitBtn, #stayBtn, #dealBtn, #doubleBtn, #splitBtn {
+    color: #020202;
+}
