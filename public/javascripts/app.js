@@ -1,6 +1,6 @@
 var app = angular.module('blackJack', []);
 
-app.controller('gameCtrl',['$scope','$http', function($scope, $http) {
+app.controller('gameCtrl',['$scope', '$http', function($scope, $http) {
 
     $scope.getInfo = function () {
         $http({

@@ -3,12 +3,12 @@ var vars = require('../logic/vars');
 var bust = require('../logic/handBust');
 var dFin = require('../logic/dealerHitTo17');
 var comp = require('../logic/compareScores');
-var hiLow = require('../logic/hiLowCount');
+//var hiLow = require('../logic/hiLowCount');
 var dbl = require('../logic/canDoubleDown2');
 
 var stand = function () {
 
-            if(vars.split1Array.length == 1) {
+            if(vars.split1Array.length === 1) {
                 vars.playerHandActive = false;
                 vars.split1Active = true;
                 vars.playerCanHit = true;

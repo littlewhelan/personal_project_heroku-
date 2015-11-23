@@ -15,7 +15,7 @@ var handBust = {
                 vars.playerCanStand = false;
                 vars.playerCanDouble = false;
                 //check if player can double on the split
-                double.splitArray1();
+                double.split1Array();
                 //check if player can split again --- do this after have one round of splits working
 
         } else if (vars.playerScore > 21) {
@@ -33,7 +33,7 @@ var handBust = {
             vars.allHandsDone = true;
             vars.split1Bust = true;
             vars.split1CanHit = false;
-            playerCanStand = false;
+            vars.playerCanStand = false;
             vars.playersBank -= vars.playerBet;
             dFin();
         }

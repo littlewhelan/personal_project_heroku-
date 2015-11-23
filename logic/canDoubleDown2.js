@@ -20,10 +20,10 @@ var doubleDown = {
                 vars.playerCanDouble = true;
             } else if (sum == 10 && vars.split1Array.length == 2 && vars.naturalBlackjackDealer == false) {
                 vars.playerCanDouble = true;
-            } else if (sum == 11 && vars.splitArray.length == 2 && vars.naturalBlackjackDealer == false) {
+            } else if (sum == 11 && vars.split1Array.length == 2 && vars.naturalBlackjackDealer == false) {
                 vars.playerDouble = true;
             }
-            else vars.playerCanDouble = false;
+            else  vars.playerCanDouble = false;
         }
 
 
