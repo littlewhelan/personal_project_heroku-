@@ -28,8 +28,8 @@ block content
         button(id='doubleBtn' ng-click='doubleBtn()' ng-show ='showDoubleBtn').col-md-1 2X
         button(id='splitBtn' ng-click='splitBtn()' ng-show ='showSplitBtn').col-md-1 Split
         button(id='stayBtn' ng-click='stayBtn()' ng-show ='showStayBtn').col-md-1 Stay
-        button(id='hitBtn' ng-click='hitBtn()' ng-show ='hideHitBtn').col-md-1 Hit
-        button(id='dealBtn' ng-click='dealBtn()' ng-hide ='hideDealBtn').col-md-1 Deal
+        button(id='hitBtn' ng-click='hitBtn()' ng-show ='showHitBtn').col-md-1 Hit
+        button(id='dealBtn' ng-click='dealBtn()' ng-hide ='showDealBtn').col-md-1 Deal
     div(ng-show ='true').row.cards
       div.col-md-offset-5.col-md-6.bank
         //|Hi-Low Count: {{hiLowCount}}

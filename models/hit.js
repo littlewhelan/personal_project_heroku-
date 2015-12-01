@@ -4,7 +4,7 @@ var calc = require('../logic/calcScores');
 var bust = require('../logic/handBust');
 var canDouble = require('../logic/canDoubleDown2');
 var canSplit = require('../logic/canSplit');
-var hiLow = require('../logic/hiLowCount');
+//var hiLow = require('../logic/hiLowCount');
 
 
 var hitOriginalHand = function() {
@@ -20,14 +20,14 @@ var hitOriginalHand = function() {
             canDouble.player();
             canSplit.player(vars.playerArray);
             //hiLow();
-    } else if (vars.split1ArrayActive == true) {
+    } else if (vars.split1Active == true) {
         //draw one more card
         vars.split1Array.push(cards.drawCard());
         //check the new score
         calc.split1ScoreF();
         //Check to see if the player bust if true subtract the bet
-        bust.splitArray1();
-        canDouble.splitArray1();
+        bust.split1Array();
+        canDouble.split1Array();
         //Not sure if this needs to be here....
         //canSplit.player(vars.playerArray);
         //hiLow();

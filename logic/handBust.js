@@ -1,6 +1,6 @@
 var vars = require('./vars');
 var dFin = require('./dealerHitTo17');
-var double = require('./canDoubleDown2');
+//var double = require('./canDoubleDown2');
 
 var handBust = {
 
@@ -11,11 +11,11 @@ var handBust = {
                 vars.playersBank -= vars.playerBet;
                 vars.split1ArrayActive = true;
                 vars.allHandsDone = false;
-                vars.playerCanHit = true;
+                vars.playerCanHit = false;
                 vars.playerCanStand = false;
                 vars.playerCanDouble = false;
                 //check if player can double on the split
-                double.split1Array();
+                //double.split1Array();
                 //check if player can split again --- do this after have one round of splits working
 
         } else if (vars.playerScore > 21) {
@@ -24,6 +24,8 @@ var handBust = {
                 vars.allHandsDone = true;
                 vars.split1CanHit = false;
                 vars.playerCanStand = false;
+                vars.allHandsDone = true;
+                vars.playerCanHit = false;
                 dFin();
                 }
     },

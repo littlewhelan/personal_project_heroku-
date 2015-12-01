@@ -24,6 +24,7 @@ var double = function() {
     vars.playerCanDouble = false;
     vars.playerCanHit = false;
     vars.allHandsDone = true;
+    vars.playerCanStand = false;
 };
 
 

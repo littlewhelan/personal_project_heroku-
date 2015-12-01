@@ -16,9 +16,9 @@ app.controller('gameCtrl',['$scope', '$http', function($scope, $http) {
             $scope.playersBank = response.data.playersBank;
             $scope.playerBet = response.data.playerBet;
             $scope.hiLowCount = response.data.hiLowCount;
-            $scope.hideHitBtn = response.data.playerCanHit;
+            $scope.showHitBtn = response.data.playerCanHit;
             $scope.showStayBtn = response.data.playerCanStand;
-            $scope.hideDealBtn = response.data.playerCanHit;
+            $scope.showDealBtn = response.data.playerCanHit;
             $scope.showSplitBtn = response.data.playerCanSplit;
             $scope.showDoubleBtn = response.data.playerCanDouble;
             $scope.allHandsDone = response.data.allHandsDone;

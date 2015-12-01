@@ -2,15 +2,17 @@ var vars = require('./vars');
 
 var naturalBlackjack = function () {
 
-    if(vars.dealerScore == 21 && vars.dealerArray.length == 2) {
+    if(vars.dealerScore === 21 && vars.dealerArray.length === 2) {
         vars.allHandsDone = true;
         vars.playerCanHit = false;
+        vars.playerCanStand = false;
         vars.naturalBlackjackDealer =true;
     }
-    if(vars.playerScore == 21 && vars.playerArray.length == 2) {
+    if(vars.playerScore === 21 && vars.playerArray.length === 2) {
         vars.naturalBlackjackPlayer = true;
         vars.playerCanHit = false;
         vars.allHandsDone = true;
+        vars.playerCanStand = false;
     }
     if(vars.naturalBlackjackPlayer == true && vars.naturalBlackjackDealer == true && vars.dealersFirstCardIsAce == true) {
         vars.playersBank += vars.playerBet;
