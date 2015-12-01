@@ -11,18 +11,21 @@ block content
         img(src ="/images/{{cards.imgName}}")
       div(ng-show='allHandsDone').col-md-1.total.center
         |{{dealerScore}}
+        p(ng-show = 'dealerBust') Bust
     div(ng-show ='true')#playerHand.row.cards
       div.col-md-offset-4.col-md-1
       div(ng-repeat ="cards in playerHand" ).col-md-1.cards
         img(src ="/images/{{cards.imgName}}")
       div.col-md-1.total.center
         |{{playerScore}}
+        p(ng-show = 'playerBust') Bust
     div(ng-show ='true')#split1Array.row.cards
       div.col-md-offset-4.col-md-1
       div(ng-repeat ="cards in split1Hand").col-md-1.cards
         img(src ="/images/{{cards.imgName}}")
-      div.col-md-1.total.center
+      div(ng-show='split1Active').col-md-1.total.center
         |{{split1Score}}
+        p(ng-show= 'split1Bust') Bust
     div.row.spacer.cards
       div.gamePlayButtons.col-md-offset-5
         button(id='doubleBtn' ng-click='doubleBtn()' ng-show ='showDoubleBtn').col-md-1 2X

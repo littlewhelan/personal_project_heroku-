@@ -36,7 +36,7 @@ var score = {
     playerCanStand: true,
     //checking if all hands are done
     allHandsDone:false,
-   //hiLowCount:0,
+
 
 };
 

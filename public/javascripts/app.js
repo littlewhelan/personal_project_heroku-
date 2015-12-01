@@ -24,6 +24,9 @@ app.controller('gameCtrl',['$scope', '$http', function($scope, $http) {
             $scope.allHandsDone = response.data.allHandsDone;
             $scope.playerHandActive = response.data.playerHandActive;
             $scope.split1Active = response.data.split1Active;
+            $scope.playerBust = response.data.playerBust;
+            $scope.dealerBust = response.data.dealerBust;
+            $scope.split1Bust = response.data.split1Bust;
 
         });
     };

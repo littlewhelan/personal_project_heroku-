@@ -31,6 +31,7 @@ var reset = function() {
     //reset active hand
     vars.playerHandActive = true;
     vars.split1Active = false;
+    vars.split1Score ='';
 
 
 };
