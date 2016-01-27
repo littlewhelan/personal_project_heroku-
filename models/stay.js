@@ -31,6 +31,7 @@ var stand = function () {
                 bust.dealer();
                 //if neither the player or the dealer bust compares the scores and pays out
                 comp.player();
+                comp.split1();
                 //hiLow();
                 }
 
